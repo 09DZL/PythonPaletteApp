@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c629bbc4-3dc1-4c8e-b440-bd77f9cf90e0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>src\PalleteApplication.py</StartupFile>
+    <StartupFile>Main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PalleteApplication</Name>
     <RootNamespace>PalleteApplication</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,11 +22,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="src\PalleteApplication.py" />
-    <Compile Include="src\SampleImage.py" />
+    <Compile Include="ColorizedImage.py" />
+    <Compile Include="ColorWheel.py" />
+    <Compile Include="Main.py" />
+    <Compile Include="SelectedColor.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\" />
+    <Content Include="bunny.png" />
+    <Content Include="color_wheel.png" />
+    <Content Include="target.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
